@@ -1,0 +1,15 @@
+.section {
+
+
+padding: 20px auto;
+margin: 0 ;
+font-family: "Montserrat", sans-serif;
+font-size: 20px;
+line-height: 1.5;
+text-align: left;
+max-width: 900px;
+ }
+
+ /*display: grid;
+grid-template-columns:  100px, 200px;
+justify-content: center;

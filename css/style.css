@@ -1,0 +1,111 @@
+html {
+    box-sizing: border-box;
+}
+
+*,::after,::before {
+    box-sizing: inherit;
+}
+
+body {
+    background: #d5d1d1;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+
+  .form { 
+    border: 2px solid white;
+    background-color: white;
+    padding: 25px;
+    margin: 0px auto 10px;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 20px;
+  }
+    @media(max-width: 767px){
+      .form {
+          grid-template-columns: 1fr;
+      }
+  }
+  
+  
+  .inputList {
+    border: 2px solid white;
+    margin: 20px; 
+    background-color: white;
+    padding: 25px;
+    max-width: 900px;
+  }
+  
+  .tasks {
+    list-style: none;
+    margin: auto 0px auto -40px ;
+    }
+  
+  .remove {
+    background: red;
+    max-width: 25px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .toggleDone {
+    background: green;
+    max-width: 25px;
+  }
+  
+  .task {
+    display: flex;
+    flex-wrap: 10px;
+    flex-basis: 100px;
+    border-bottom: 1px solid #eee; 
+    border: 0px 1px solid black;
+    margin: auto; 
+    background-color: white;
+    padding: 25px;
+    max-width: 900px; 
+  }
+  
+  .header {
+   border-bottom: 1px solid #eee;
+   border: 0px 1px solid black;
+    margin: auto; 
+    background-color: white;
+    padding: 25px;
+    max-width: 900px;
+     }
+  
+  .list {
+    padding: 20px;
+    font-size: 50px;
+  }
+  
+  .inputForm {
+    border-bottom: 1px solid #eee; 
+    border: 0px 1px solid black;
+    background-color: white; 
+    margin: auto;
+  }
+
+  .newTask {
+    max-width: 590px;   
+}
+
+.tasks__content {
+  display: flex;
+  flex-grow: 1;
+  padding:  2px;
+}
+
+.tasks__content--done {
+flex-grow: 1;
+  padding: 2px;
+}
+  .button {
+    background-color: #326c86;
+    color: white;
+  }
+   /* display: grid;
+    grid-template-columns: 0 auto ;
+    }
