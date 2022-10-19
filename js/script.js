@@ -1,5 +1,5 @@
 {
-const tasks = [
+let tasks = [
 {
     content: "przerobić lekcje",
     done: false,
@@ -49,8 +49,8 @@ toggleDoneButtons.forEach((toggleDoneButton, index) => {
 
 }
 
-const render = () => {
-let htmlString = "";
+const renderTasks = () => {
+    let htmlString = "";
 
 for(const task of tasks) {
     htmlString += `
@@ -73,6 +73,31 @@ for(const task of tasks) {
 }
 
 document.querySelector(".js-tasks").innerHTML = htmlString;
+
+};
+
+const renderButtons = () => {
+let buttons = "";
+for(const button of buttons) {
+        buttons += `
+        <li>
+        <button class = "js-hideDoneButton hideDoneButton">
+        ${hideDoneButton ? "Ukryj ukończone" : "Pokaż ukończone"}
+        </button>
+
+        <button class = "js-finishButton finishButton">
+        ${finishButton ?  "disabled": ""}
+        "Ukończ wszystkie"
+</button>
+</li>
+`;
+     }
+     document.querySelector(".js-buttons").innerHTML = buttons;
+};
+
+const render = () => {
+renderTasks();
+renderButtons();
 
 bindEvents();
 };
