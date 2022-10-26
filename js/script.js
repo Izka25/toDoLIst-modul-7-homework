@@ -95,11 +95,22 @@ for(const button of buttons) {
      document.querySelector(".js-buttons").innerHTML = buttons;
 };
 
+const bindButtonsEvents = () => {
+    const hideDoneButtons = document.querySelectorAll(".js-hideDoneButton");
+
+    hideDoneButtons.forEach((hideDoneButton,index) =>{
+        hideDoneButton.addEventListener("click",() =>{
+            removeTask(index);
+        });
+    });
+};
+
 const render = () => {
 renderTasks();
 renderButtons();
 
 bindEvents();
+bindButtonsEvents();
 };
 
 const onFormSubmit = (event) => {
