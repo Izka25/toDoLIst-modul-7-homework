@@ -48,11 +48,23 @@ body {
     max-width: 25px;
     display: flex;
     justify-content: flex-end;
+    transition: 1s;
   }
   
+  .remove:hover{
+    background: rgb(230, 9, 9);
+    transform: scale(1.5);
+  }
+
   .toggleDone {
     background: green;
     max-width: 25px;
+    transition: 1s;
+  }
+  
+  .toggleDone:hover{
+    background: rgb(64, 199, 64);
+    transform: scale(1.5);
   }
   
   .task {
@@ -111,6 +123,7 @@ flex-grow: 1;
 
 
   .button:hover {
+    background:#593ee0;
     transform: scale(1.5);
   }
    /* display: grid;
