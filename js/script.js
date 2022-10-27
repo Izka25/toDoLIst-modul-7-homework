@@ -10,6 +10,8 @@ let tasks = [
 },
 ];
 
+let hideDoneTasks = false;
+
 const addNewTask = (newTaskContent) => {
     tasks = [
         ...tasks,
@@ -25,7 +27,7 @@ render();
 }
 
 const toggleTaskDone = (taskIndex) => {
-    tasks[taskIndex].done = !tasks[taskIndex].done;
+    tasks = tasks.map(taskIndex => tasks)
     render();
 }
 
