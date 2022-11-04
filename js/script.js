@@ -84,7 +84,7 @@ document.querySelector(".js-tasks").innerHTML = htmlString;
 
 const renderButtons = () => {
 let htmlButtonsString = "";
-for(const button of buttons) {
+ {
     htmlButtonsString += `
         <li>
         <button class = "js-hideDoneButton hideDoneButton">
