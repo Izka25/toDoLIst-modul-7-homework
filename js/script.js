@@ -83,9 +83,9 @@ document.querySelector(".js-tasks").innerHTML = htmlString;
 };
 
 const renderButtons = () => {
-let buttons = "";
+let htmlButtonsString = "";
 for(const button of buttons) {
-        buttons += `
+    htmlButtonsString += `
         <li>
         <button class = "js-hideDoneButton hideDoneButton">
         ${hideDoneButton ? "Ukryj ukończone" : "Pokaż ukończone"}
@@ -98,7 +98,7 @@ for(const button of buttons) {
 </li>
 `;
      }
-     document.querySelector(".js-buttons").innerHTML = buttons;
+     document.querySelector(".js-buttons").innerHTML = htmlButtonsString;
 };
 
 const bindButtonsEvents = () => {
