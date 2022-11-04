@@ -88,7 +88,9 @@ let htmlButtonsString = "";
     htmlButtonsString += `
         <li>
         <button class = "js-hideDoneButton hideDoneButton">
-        ${hideDoneButton ? "Ukryj ukończone" : "Pokaż ukończone"}
+        ${hideDoneButton.classList.toggle("hidden"),
+        toggleDone.innerText = hideDoneButton.classList.contains("hidden")
+         ? "Ukryj ukończone" : "Pokaż ukończone"}
         </button>
 
         <button class = "js-finishButton finishButton">
