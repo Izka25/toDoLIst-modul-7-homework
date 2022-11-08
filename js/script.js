@@ -84,27 +84,27 @@ document.querySelector(".js-tasks").innerHTML = htmlString;
 
 const renderButtons = () => {
 let htmlButtonsString = "";
- {
+ 
     htmlButtonsString += `
-        <li>
-        <button class = "js-hideDoneButton hideDoneButton">
-        ${hideDoneButton.classList.toggle("hidden"),
-        toggleDone.innerText = hideDoneButton.classList.contains("hidden")
+    <li>
+    <button class = "js-hideDoneButton hideDoneButton">
+        ${hideDoneButton.classList.toggle(hideDoneTasks),
+       toggleDone.innerText = hideDoneButton.classList.contains(hideDoneTasks)
          ? "Ukryj ukończone" : "Pokaż ukończone"}
-        </button>
+    </button>
 
-        <button class = "js-finishButton finishButton">
+    <button class = "js-finishButton finishButton">
         ${finishButton ?  "disabled": ""}
         "Ukończ wszystkie"
-</button>
-</li>
-`;
-     }
+    </button>
+    </li>
+     `;
+     
      document.querySelector(".js-buttons").innerHTML = htmlButtonsString;
 };
 
 const bindButtonsEvents = () => {
-    const hideDoneButtons = document.querySelectorAll(".js-hideDoneButton");
+const hideDoneButtons = document.querySelectorAll(".js-hideDoneButton");
 
     hideDoneButtons.forEach((hideDoneButton,index) =>{
         hideDoneButton.addEventListener("click",() =>{
