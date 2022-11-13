@@ -76,6 +76,10 @@
   const renderButtons = () => {
     let htmlButtonsString = "";
 
+    if (newTaskContent === "") {
+      return
+    }
+    
     htmlButtonsString += `
     <li>
     <button class = "js-hideDoneButton hideDoneButton">
@@ -89,9 +93,6 @@
             ))
         }
     </button>
-    if (newTaskContent === "") {
-      return
-    }
 
     <button class = "js-finishButton finishButton">
         ${finishButton ? "disabled" : ""}
