@@ -85,9 +85,13 @@
             hideDoneTasks
           )
             ? "Ukryj ukończone"
-            : "Pokaż ukończone"))
+            : "Pokaż ukończone"
+            ))
         }
     </button>
+    if (newTaskContent === "") {
+      return
+    }
 
     <button class = "js-finishButton finishButton">
         ${finishButton ? "disabled" : ""}
