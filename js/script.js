@@ -76,12 +76,12 @@
   const renderButtons = () => {
     let htmlButtonsString = "";
 
-    if (newTaskContent === "") {
+    if (hideDoneTasks === "") {
       return
     }
     
     htmlButtonsString += `
-    <li>
+    
     <button class = "js-hideDoneButton hideDoneButton">
         ${
           (hideDoneButton.classList.toggle(hideDoneTasks),
@@ -98,7 +98,7 @@
         ${finishButton ? "disabled" : ""}
         "Ukończ wszystkie"
     </button>
-    </li>
+    
      `;
 
     document.querySelector(".js-buttons").innerHTML = htmlButtonsString;
