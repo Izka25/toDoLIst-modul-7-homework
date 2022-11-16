@@ -76,26 +76,17 @@
   const renderButtons = () => {
     let htmlButtonsString = "";
 
-    if (hideDoneTasks === "") {
+    if (tasks.length < 1) {
       return
     }
     
     htmlButtonsString += `
     
     <button class = "js-hideDoneButton hideDoneButton">
-        ${
-          (hideDoneButton.classList.toggle(hideDoneTasks),
-          (toggleDone.innerText = hideDoneButton.classList.contains(
-            hideDoneTasks
-          )
-            ? "Ukryj ukończone"
-            : "Pokaż ukończone"
-            ))
-        }
+        ${hideDoneTasks ? "Ukryj ukończone" : "Pokaż ukończone"}
     </button>
 
-    <button class = "js-finishButton finishButton">
-        ${finishButton ? "disabled" : ""}
+    <button class = "js-finishButton finishButton" ${tasks.every(({done}) => done)  ? "disabled" : ""}>
         "Ukończ wszystkie"
     </button>
     
