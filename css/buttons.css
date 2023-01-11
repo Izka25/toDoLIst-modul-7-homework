@@ -1,4 +1,31 @@
 .buttons {
+  display: flex;
+  flex-direction: row-reverse;
+}
+  
+
+
+
+.hideDoneButton  {
+color: white;
+background-color: #326c86;
+transition: 1s;
+
+
+}
+
+.hideDoneButton:hover {
+  background:#593ee0;
+  transform: scale(1.5);
+}
+
+.finishButton {
   color: white;
-  background-color: rgb(115, 60, 152);
+background-color: #326c86;
+transition: 1s;
+}
+
+.finishButton:hover {
+  background:#593ee0;
+  transform: scale(1.5);
 }
