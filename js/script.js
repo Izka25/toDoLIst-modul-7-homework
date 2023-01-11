@@ -56,7 +56,7 @@
     class="js-task task"
     ${task.done ? ' style="text-decoration: line-through"' : ""}>
     
-    <button class="js-toggleDone toggleDone ">
+    <button class="js-toggleDone toggleDone">
     ${task.done ? "✔" : ""}
     </button>
     
@@ -87,7 +87,7 @@
     </button>
 
     <button class = "js-finishButton finishButton" ${tasks.every(({done}) => done)  ? "disabled" : ""}>
-        "Ukończ wszystkie"
+        Ukończ wszystkie
     </button>
     
      `;
