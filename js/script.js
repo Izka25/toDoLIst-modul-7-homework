@@ -25,7 +25,8 @@
   };
 
   const toggleTaskDone = (taskIndex) => {
-    tasks = tasks.map((taskIndex) => tasks);
+    tasks = tasks.map(task => taskIndex === task.id ? { ...task, done: !task.done, } : tasks);
+    
     render();
   };
 
