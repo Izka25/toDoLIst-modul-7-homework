@@ -29,3 +29,17 @@ transition: 1s;
   background:#593ee0;
   transform: scale(1.5);
 }
+
+.section__header {
+display: flex;
+justify-content: flex-end;
+flex-direction: row-reverse;
+flex-wrap: nowrap;
+
+align-items: stretch;
+}
+
+.section__buttons {
+  display:flex;
+  justify-content: flex-end;
+}
