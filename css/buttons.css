@@ -3,15 +3,10 @@
   flex-direction: row-reverse;
 }
   
-
-
-
 .hideDoneButton  {
 color: white;
 background-color: #326c86;
 transition: 1s;
-
-
 }
 
 .hideDoneButton:hover {
@@ -30,16 +25,3 @@ transition: 1s;
   transform: scale(1.5);
 }
 
-.section__header {
-display: flex;
-justify-content: flex-end;
-flex-direction: row-reverse;
-flex-wrap: nowrap;
-
-align-items: stretch;
-}
-
-.section__buttons {
-  display:flex;
-  justify-content: flex-end;
-}
