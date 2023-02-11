@@ -79,14 +79,7 @@ body {
     max-width: 900px; 
   }
   
-  .section__title {
-   border-bottom: 1px solid #eee;
-   border: 0px 1px solid black;
-    margin: auto; 
-    background-color: white;
-    padding: 25px;
-    max-width: 900px;
-     }
+
   
   .list {
     padding: 20px;
