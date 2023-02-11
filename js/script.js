@@ -106,12 +106,24 @@
     });
   };
 
+
+  const bindButtonsFinishs = () => {
+    const finishButtons = document.querySelectorAll(".js-finishButton");
+
+    finishButtons.forEach((finishButton, index) => {
+      finishButton.addEventListener("click", () => {
+       finishButton(index);
+      });
+    });
+  } ;
+
   const render = () => {
     renderTasks();
     renderButtons();
 
     bindEvents();
     bindButtonsEvents();
+    bindButtonsFinishs();
   };
 
   const onFormSubmit = (event) => {
