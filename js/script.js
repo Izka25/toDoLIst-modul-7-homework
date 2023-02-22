@@ -112,10 +112,18 @@
 
     finishButtons.forEach((finishButton, index) => {
       finishButton.addEventListener("click", () => {
-       finishButton(index);
+        finishButtons(index);
       });
     });
   } ;
+
+
+const taskDoneTask = () => {
+  tasks = tasks.map((task) => ({
+    ...task,
+    done: true,
+  }));
+};
 
   const render = () => {
     renderTasks();
@@ -124,6 +132,7 @@
     bindEvents();
     bindButtonsEvents();
     bindButtonsFinishs();
+    taskDoneTask();
   };
 
   const onFormSubmit = (event) => {
