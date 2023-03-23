@@ -83,11 +83,11 @@
     
     htmlButtonsString += `
     
-    <button class = "js-hideDoneButton hideDoneButton">
+    <button class = "hideDoneButton js-hideDoneButton ">
         ${hideDoneTasks ? "Ukryj ukończone" : "Pokaż ukończone"}
     </button>
 
-    <button class = "js-finishButton finishButton" ${tasks.every(({done}) => done)  ? "disabled" : ""}>
+    <button class = "finishButton js-finishButton " ${tasks.every(({done}) => done)  ? "disabled" : ""}>
         Ukończ wszystkie
     </button>
     
@@ -108,14 +108,14 @@
 
 
   const bindButtonsFinishs = () => {
-    const finishButtons = document.querySelector(".js-finishButton");
+    const finishButton = document.querySelector(".js-finishButton");
 
-    finishButtons.forEach((finishButton, index) => {
-      finishButton.addEventListener("click", () => {
-        finishButtons(index);
-      });
-    });
-  } ;
+  
+      finishButton.addEventListener("click",bindButtonsFinishs)
+       
+      
+    };
+  
 
 
 const taskDoneTask = () => {
