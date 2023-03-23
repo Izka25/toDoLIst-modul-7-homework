@@ -108,7 +108,7 @@
 
 
   const bindButtonsFinishs = () => {
-    const finishButtons = document.querySelectorAll(".js-finishButton");
+    const finishButtons = document.querySelector(".js-finishButton");
 
     finishButtons.forEach((finishButton, index) => {
       finishButton.addEventListener("click", () => {
