@@ -110,10 +110,10 @@
   const bindButtonsFinishs = () => {
     const finishButton = document.querySelector(".js-finishButton");
 
-  
-      finishButton.addEventListener("click",bindButtonsFinishs)
+  if(finishButton) {
+      finishButton.addEventListener("click", taskDoneTask)
        
-      
+    } 
     };
   
 
