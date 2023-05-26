@@ -30,6 +30,12 @@
     render();
   };
 
+  const hideDoneButton = () => {
+    hideDoneTasks = !hideDoneTasks;
+
+    render();
+  };
+
   const bindEvents = () => {
     const removeButtons = document.querySelectorAll(".js-remove");
 
@@ -132,7 +138,7 @@ const taskDoneTask = () => {
     bindEvents();
     bindButtonsEvents();
     bindButtonsFinishs();
-    taskDoneTask();
+    
   };
 
   const onFormSubmit = (event) => {
