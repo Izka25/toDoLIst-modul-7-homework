@@ -129,6 +129,7 @@ const taskDoneTask = () => {
     ...task,
     done: true,
   }));
+  render();
 };
 
   const render = () => {
