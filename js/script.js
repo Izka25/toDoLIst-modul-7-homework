@@ -117,14 +117,14 @@
     const finishButton = document.querySelector(".js-finishButton");
 
   if(finishButton) {
-      finishButton.addEventListener("click", taskDoneTask)
+      finishButton.addEventListener("click", toggleAllTasksDone)
        
     } 
     };
   
 
 
-const taskDoneTask = () => {
+const toggleAllTasksDone = () => {
   tasks = tasks.map((task) => ({
     ...task,
     done: true,
