@@ -107,7 +107,7 @@
 
     hideDoneButtons.forEach((hideDoneButton, index) => {
       hideDoneButton.addEventListener("click", () => {
-        removeTask(index);
+      hideDoneButton(index);
       });
     });
   };
