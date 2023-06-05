@@ -60,7 +60,7 @@
     for (const task of tasks) {
       htmlString += `
     <li 
-    class="js-task task"
+    class="js-task task ${task.done && hideDoneTasks ? "task--hidden" : ""}"
     ${task.done ? ' style="text-decoration: line-through"' : ""}>
     
     <button class="js-toggleDone toggleDone">
