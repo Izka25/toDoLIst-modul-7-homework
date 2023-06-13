@@ -113,6 +113,14 @@
   };
 
 
+  const toggleAllTasksCompleted = () => {
+    tasks = tasks.map((task) => ({
+      ...task,
+      done: true,
+    }));
+    render();
+  };
+
   const bindButtonsFinishs = () => {
     const finishButton = document.querySelector(".js-finishButton");
 
