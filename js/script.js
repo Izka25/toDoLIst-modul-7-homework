@@ -103,7 +103,7 @@
   };
 
   const bindButtonsEvents = () => {
-    const hideDoneButtons = document.querySelectorAll(".js-hideDoneButton");
+    const hideDoneButtons = document.querySelector(".js-hideDoneButton");
 
     hideDoneButtons.forEach((hideDoneButton, index) => {
       hideDoneButton.addEventListener("click", () => {
