@@ -103,12 +103,12 @@
   };
 
   const bindButtonsEvents = () => {
-    const hideDoneButton = document.querySelector(".js-hideDoneButton");
+    const hideDoneButtonElement = document.querySelector(".js-hideDoneButton");
 
 
-    if(hideDoneButton) {
+    if(hideDoneButtonElement) {
 
-      hideDoneButton.addEventListener("click", hideDoneButton)
+      hideDoneButtonElement.addEventListener("click", hideDoneButton)
        
     } 
     };
