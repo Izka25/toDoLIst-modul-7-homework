@@ -79,7 +79,9 @@ body {
     max-width: 900px; 
   }
   
-
+.task--hidden {
+  display: none;
+}
   
   .list {
     padding: 20px;
