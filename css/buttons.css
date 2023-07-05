@@ -4,24 +4,22 @@
 }
   
 .hideDoneButton  {
-color: white;
-background-color: #326c86;
+background: transparent;
 transition: 1s;
 }
 
 .hideDoneButton:hover {
-  background:#593ee0;
+  background: transparent;
   transform: scale(1.5);
 }
 
 .finishButton {
-  color: white;
-background-color: #326c86;
+background: transparent;
 transition: 1s;
 }
 
 .finishButton:hover {
-  background:#593ee0;
+  background: transparent;
   transform: scale(1.5);
 }
 
