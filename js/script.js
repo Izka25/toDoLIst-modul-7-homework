@@ -90,7 +90,7 @@
     htmlButtonsString += `
     
     <button class = "hideDoneButton js-hideDoneButton ">
-        ${hideDoneTasks ? "Ukryj ukończone" : "Pokaż ukończone"}
+        ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
     </button>
 
     <button class = "finishButton js-finishButton " ${tasks.every(({done}) => done)  ? "disabled" : ""}>
