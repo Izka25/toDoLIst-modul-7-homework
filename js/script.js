@@ -85,7 +85,7 @@
   const renderButtons = () => {
     let htmlButtonsString = "";
 
-    if (tasks.length < 1) {
+    if (!tasks.length) {
       return;
     }
 
