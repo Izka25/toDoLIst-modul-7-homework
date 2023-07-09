@@ -113,13 +113,6 @@
     } 
     };
 
-    /*hideDoneButtons.forEach((hideDoneButton, index) => {
-      hideDoneButton.addEventListener("click", () => {
-      hideDoneButton(index);
-      });
-    });
-  };*/
-
 
   const toggleAllTasksCompleted = () => {
     tasks = tasks.map((task) => ({
