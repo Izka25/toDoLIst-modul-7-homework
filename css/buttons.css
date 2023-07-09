@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: row-reverse;
 }
-  
-.hideDoneButton  {
-background: transparent;
-transition: 1s;
+
+.hideDoneButton {
+  background: transparent;
+  transition: 1s;
 }
 
 .hideDoneButton:hover {
@@ -14,12 +14,11 @@ transition: 1s;
 }
 
 .finishButton {
-background: transparent;
-transition: 1s;
+  background: transparent;
+  transition: 1s;
 }
 
 .finishButton:hover {
   background: transparent;
   transform: scale(1.5);
 }
-

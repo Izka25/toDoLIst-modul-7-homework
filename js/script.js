@@ -25,8 +25,10 @@
   };
 
   const toggleTaskDone = (taskIndex) => {
-    tasks = tasks.map((task, index) => taskIndex === index ? { ...task, done: !task.done, } : task);
-    
+    tasks = tasks.map((task, index) =>
+      taskIndex === index ? { ...task, done: !task.done } : task
+    );
+
     render();
   };
 
@@ -84,16 +86,18 @@
     let htmlButtonsString = "";
 
     if (tasks.length < 1) {
-      return
+      return;
     }
-    
+
     htmlButtonsString += `
     
     <button class = "hideDoneButton js-hideDoneButton ">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
     </button>
 
-    <button class = "finishButton js-finishButton " ${tasks.every(({done}) => done)  ? "disabled" : ""}>
+    <button class = "finishButton js-finishButton " ${
+      tasks.every(({ done }) => done) ? "disabled" : ""
+    }>
         Ukończ wszystkie
     </button>
     
@@ -105,14 +109,10 @@
   const bindButtonsEvents = () => {
     const hideDoneButtonElement = document.querySelector(".js-hideDoneButton");
 
-
-    if(hideDoneButtonElement) {
-
-      hideDoneButtonElement.addEventListener("click", hideDoneButton)
-       
-    } 
-    };
-
+    if (hideDoneButtonElement) {
+      hideDoneButtonElement.addEventListener("click", hideDoneButton);
+    }
+  };
 
   const toggleAllTasksCompleted = () => {
     tasks = tasks.map((task) => ({
@@ -125,21 +125,18 @@
   const bindButtonsFinishs = () => {
     const finishButton = document.querySelector(".js-finishButton");
 
-  if(finishButton) {
-      finishButton.addEventListener("click", toggleAllTasksDone)
-       
-    } 
-    };
-  
+    if (finishButton) {
+      finishButton.addEventListener("click", toggleAllTasksDone);
+    }
+  };
 
-
-const toggleAllTasksDone = () => {
-  tasks = tasks.map((task) => ({
-    ...task,
-    done: true,
-  }));
-  render();
-};
+  const toggleAllTasksDone = () => {
+    tasks = tasks.map((task) => ({
+      ...task,
+      done: true,
+    }));
+    render();
+  };
 
   const render = () => {
     renderTasks();
@@ -148,7 +145,6 @@ const toggleAllTasksDone = () => {
     bindEvents();
     bindButtonsEvents();
     bindButtonsFinishs();
-    
   };
 
   const onFormSubmit = (event) => {
