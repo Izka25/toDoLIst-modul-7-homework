@@ -1,11 +1,23 @@
 .buttons {
   display: flex;
   flex-direction: row-reverse;
+  flex-wrap: wrap;
 }
 
+
+
 .hideDoneButton {
+  border: none;
+  margin: 0 0 0 20px;
   background: transparent;
   transition: 1s;
+}
+
+@media(max-width: 767px){
+  .hideDoneButton {
+    flex-basis: 100%;
+    margin: 10px;
+  }
 }
 
 .hideDoneButton:hover {
@@ -14,6 +26,8 @@
 }
 
 .finishButton {
+  border: none;
+  margin: 0 0 0 20px;
   background: transparent;
   transition: 1s;
 }
