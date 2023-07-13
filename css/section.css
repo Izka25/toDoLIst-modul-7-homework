@@ -21,7 +21,10 @@ max-width: 900px;
     }
     
     @media(max-width: 767px){
+      
       .section__header {
+        flex-wrap: wrap;
+        flex-basis: 100%;
         grid-template-columns: 1fr;
       }
     }
@@ -34,8 +37,10 @@ max-width: 900px;
          text-align:left;
          }
 
+        
     .section__buttons {
       display:flex;
       justify-content: flex-end;
     }
 
+    
