@@ -13,6 +13,8 @@ body {
     padding: 10px;
   }
 
+  
+
   .form { 
     border: 2px solid white;
     background-color: white;
@@ -25,6 +27,7 @@ body {
   }
     @media(max-width: 767px){
       .form {
+        flex-wrap: wrap;
           grid-template-columns: 1fr;
       }
   }
@@ -49,7 +52,7 @@ body {
     display: flex;
     justify-content: flex-end;
     transition: 1s;
-  }
+ }
   
   .remove:hover{
     background: rgb(230, 9, 9);
