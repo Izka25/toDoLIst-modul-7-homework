@@ -23,7 +23,8 @@ body {
   
   .tasks {
     list-style: none;
-    margin: auto 0px auto -40px ;
+    margin: 0;
+    padding: 0;
   }
   
   .remove {
