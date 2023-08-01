@@ -13,26 +13,6 @@ body {
     padding: 10px;
   }
 
-  
-
-  .form { 
-    border: 2px solid white;
-    background-color: white;
-    padding: 25px;
-    margin: 0px auto 10px;
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-  }
-    @media(max-width: 767px){
-      .form {
-        flex-wrap: wrap;
-          grid-template-columns: 1fr;
-      }
-  }
-  
-  
   .inputList {
     border: 2px solid white;
     margin: 20px; 
@@ -44,7 +24,7 @@ body {
   .tasks {
     list-style: none;
     margin: auto 0px auto -40px ;
-    }
+  }
   
   .remove {
     background: red;
@@ -84,6 +64,7 @@ body {
   
 .task--hidden {
   display: none;
+  text-decoration: line-through;
 }
   
   .list {
@@ -93,7 +74,6 @@ body {
   
   .inputForm {
     border-bottom: 1px solid #eee; 
-    border: 0px 1px solid black;
     background-color: white; 
     margin: auto;
   }
@@ -117,8 +97,6 @@ flex-grow: 1;
     color: white;
     transition: 1s;
   }
-
-
 
   .button:hover {
     background:#593ee0;
