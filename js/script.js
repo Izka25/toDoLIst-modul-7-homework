@@ -115,7 +115,7 @@
     }
   };
 
-  const bindButtonsFinishs = () => {
+  const bindButtonMakeAllDone = () => {
     const makeAllDone = document.querySelector(".js-makeAllDone");
 
     if (makeAllDone) {
@@ -137,7 +137,7 @@
 
     bindEvents();
     bindButtonsEvents();
-    bindButtonsFinishs();
+    bindButtonMakeAllDone();
   };
 
   const onFormSubmit = (event) => {
