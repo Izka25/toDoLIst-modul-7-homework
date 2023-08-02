@@ -96,7 +96,7 @@
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
     </button>
 
-    <button class = "finishButton js-finishButton " ${
+    <button class = "makeAllDone js-makeAllDone " ${
       tasks.every(({ done }) => done) ? "disabled" : ""
     }>
         Ukończ wszystkie
@@ -116,10 +116,10 @@
   };
 
   const bindButtonsFinishs = () => {
-    const finishButton = document.querySelector(".js-finishButton");
+    const makeAllDone = document.querySelector(".js-makeAllDone");
 
-    if (finishButton) {
-      finishButton.addEventListener("click", toggleAllTasksDone);
+    if (makeAllDone) {
+      makeAllDone.addEventListener("click", toggleAllTasksDone);
     }
   };
 

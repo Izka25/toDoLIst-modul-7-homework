@@ -24,14 +24,14 @@
   transform: scale(1.5);
 }
 
-.finishButton {
+.makeAllDone {
   border: none;
   margin: 0 0 0 20px;
   background: transparent;
   transition: 1s;
 }
 
-.finishButton:hover {
+.makeAllDone:hover {
   background: transparent;
   transform: scale(1.5);
 }
