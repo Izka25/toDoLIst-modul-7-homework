@@ -64,7 +64,6 @@
     <li 
     class="js-task task ${task.done && hideDoneTasks ? "task--hidden" : ""}"
     ${task.done ? ' style="text-decoration: line-through"' : ""}>
-    
     <button class="js-toggleDone toggleDone">
     ${task.done ? "✔" : ""}
     </button>
@@ -74,9 +73,11 @@
     <button class="js-remove remove">
     🗑
     </button>
+    
  </li>
     
     `;
+    
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;
@@ -112,14 +113,6 @@
     if (hideDoneButtonElement) {
       hideDoneButtonElement.addEventListener("click", hideDoneButton);
     }
-  };
-
-  const toggleAllTasksCompleted = () => {
-    tasks = tasks.map((task) => ({
-      ...task,
-      done: true,
-    }));
-    render();
   };
 
   const bindButtonsFinishs = () => {
