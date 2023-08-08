@@ -105,3 +105,6 @@ flex-grow: 1;
     transform: scale(1.5);
   }
    
+  .task.done{
+    text-decoration: line-through
+  }
