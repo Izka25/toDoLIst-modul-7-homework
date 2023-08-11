@@ -93,6 +93,7 @@ body {
 .tasks__content--done {
 flex-grow: 1;
   padding: 2px;
+  text-decoration: line-through;
 }
   .button {
     background-color: #326c86;
@@ -105,3 +106,6 @@ flex-grow: 1;
     transform: scale(1.5);
   }
    
+  .task.done{
+    text-decoration: line-through
+  }
