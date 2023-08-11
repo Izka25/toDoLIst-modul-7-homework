@@ -63,7 +63,7 @@
       htmlString += `
     <li 
     class="js-task task ${task.done && hideDoneTasks ? "task--hidden" : ""}"
-    ${task.done ? ' style="text-decoration: line-through"' : ""}>
+    ${task.done ? "task--done" : ""}>
     <button class="js-toggleDone toggleDone">
     ${task.done ? "✔" : ""}
     </button>
@@ -115,7 +115,7 @@
     }
   };
 
-  const bindButtonMakeAllDone = () => {
+  const bindButtonsFinishs = () => {
     const makeAllDone = document.querySelector(".js-makeAllDone");
 
     if (makeAllDone) {
@@ -137,7 +137,7 @@
 
     bindEvents();
     bindButtonsEvents();
-    bindButtonMakeAllDone();
+    bindButtonsFinishs();
   };
 
   const onFormSubmit = (event) => {
