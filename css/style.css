@@ -1,111 +1,113 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-*,::after,::before {
-    box-sizing: inherit;
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
 body {
-    background: #d5d1d1;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 10px;
-  }
+  background: #d5d1d1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
-  .inputList {
-    border: 2px solid white;
-    margin: 20px; 
-    background-color: white;
-    padding: 25px;
-    max-width: 900px;
-  }
-  
-  .tasks {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .remove {
-    background: red;
-    max-width: 25px;
-    display: flex;
-    justify-content: flex-end;
-    transition: 1s;
- }
-  
-  .remove:hover{
-    background: rgb(230, 9, 9);
-    transform: scale(1.5);
-  }
+.inputList {
+  border: 2px solid white;
+  margin: 20px;
+  background-color: white;
+  padding: 25px;
+  max-width: 900px;
+}
 
-  .toggleDone {
-    background: green;
-    max-width: 25px;
-    transition: 1s;
-  }
-  
-  .toggleDone:hover{
-    background: rgb(64, 199, 64);
-    transform: scale(1.5);
-  }
-  
-  .task {
-    display: flex;
-    flex-wrap: 10px;
-    flex-basis: 100px;
-    border-bottom: 1px solid #eee; 
-    border: 0px 1px solid black;
-    margin: auto; 
-    background-color: white;
-    padding: 25px;
-    max-width: 900px; 
-  }
-  
+.tasks {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.remove {
+  background: red;
+  max-width: 25px;
+  display: flex;
+  justify-content: flex-end;
+  transition: 1s;
+}
+
+.remove:hover {
+  background: rgb(230, 9, 9);
+  transform: scale(1.5);
+}
+
+.toggleDone {
+  background: green;
+  max-width: 25px;
+  transition: 1s;
+}
+
+.toggleDone:hover {
+  background: rgb(64, 199, 64);
+  transform: scale(1.5);
+}
+
+.task {
+  display: flex;
+  flex-wrap: 10px;
+  flex-basis: 100px;
+  border-bottom: 1px solid #eee;
+  border: 0px 1px solid black;
+  margin: auto;
+  background-color: white;
+  padding: 25px;
+  max-width: 900px;
+}
+
 .task--hidden {
   display: none;
   text-decoration: line-through;
 }
-  
-  .list {
-    margin: 10px;
-    font-size: 50px;
-  }
-  
-  .inputForm {
-    padding: 10px;
-    border-bottom: 1px solid #eee; 
-    background-color: white; 
-    margin: auto;
-  }
 
-  .newTask {
-    max-width: 590px;   
+.list {
+  margin: 10px;
+  font-size: 50px;
+}
+
+.inputForm {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  background-color: white;
+  margin: auto;
+}
+
+.newTask {
+  max-width: 590px;
 }
 
 .tasks__content {
   display: flex;
   flex-grow: 1;
-  padding:  2px;
+  padding: 2px;
 }
 
 .tasks__content--done {
-flex-grow: 1;
+  flex-grow: 1;
   padding: 2px;
   text-decoration: line-through;
 }
-  .button {
-    background-color: #326c86;
-    color: white;
-    transition: 1s;
-  }
+.button {
+  background-color: #326c86;
+  color: white;
+  transition: 1s;
+}
 
-  .button:hover {
-    background:#593ee0;
-    transform: scale(1.5);
-  }
-   
-  .task.done{
-    text-decoration: line-through
-  }
+.button:hover {
+  background: #593ee0;
+  transform: scale(1.5);
+}
+
+.task.done {
+  text-decoration: line-through;
+}
