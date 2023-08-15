@@ -63,7 +63,7 @@
       htmlString += `
     <li 
     class="js-task task ${task.done && hideDoneTasks ? "task--hidden" : ""}"
-    ${task.done ? "task--done" : ""}>
+    ${task.done ? ' style="text-decoration: line-through"' : ""}>
     <button class="js-toggleDone toggleDone">
     ${task.done ? "✔" : ""}
     </button>
@@ -77,7 +77,6 @@
  </li>
     
     `;
-    
     }
 
     document.querySelector(".js-tasks").innerHTML = htmlString;

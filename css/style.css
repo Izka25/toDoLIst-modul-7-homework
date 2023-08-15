@@ -103,11 +103,8 @@ body {
   transition: 1s;
 }
 
-.button:hover {
-  background: #593ee0;
-  transform: scale(1.5);
-}
-
-.task.done {
-  text-decoration: line-through;
-}
+  .button:hover {
+    background:#593ee0;
+    transform: scale(1.5);
+  }
+   
