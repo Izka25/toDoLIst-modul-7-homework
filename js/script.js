@@ -63,7 +63,7 @@
       htmlString += `
     <li 
     class="js-task task ${task.done && hideDoneTasks ? "task--hidden" : ""}"
-    ${task.done ? ' style="text-decoration: line-through"' : ""}>
+    ${task.done ? "task--done" : ""}>
     <button class="js-toggleDone toggleDone">
     ${task.done ? "✔" : ""}
     </button>
