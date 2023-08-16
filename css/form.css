@@ -1,16 +1,15 @@
-.form { 
-    padding: 25px;
-    display: grid;
-    grid-template-columns: 1fr auto;
-    grid-gap: 20px;
-    background-color: white;
-    /*border: 2px solid white;
+.form {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-gap: 20px;
+  background-color: white;
+  /*border: 2px solid white;
     margin: 0px auto 10px;
-    max-width: 900px;*/  
+    max-width: 900px;*/
+}
+@media (max-width: 767px) {
+  .form {
+    grid-template-columns: 1fr;
   }
-    @media(max-width: 767px){
-      .form {
-        /*flex-wrap: wrap;*/
-          grid-template-columns: 1fr;
-      }
-  }
+}

@@ -11,7 +11,7 @@
   transition: 1s;
 }
 
-@media(max-width: 767px){
+@media (max-width: 767px) {
   .hideDoneButton {
     flex-wrap: wrap;
     flex-basis: 100%;
