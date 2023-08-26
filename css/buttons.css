@@ -9,6 +9,7 @@
   margin: 0 0 0 20px;
   background: transparent;
   transition: 1s;
+  color: #44a7a7;
 }
 
 @media (max-width: 767px) {
@@ -29,6 +30,7 @@
   margin: 0 0 0 20px;
   background: transparent;
   transition: 1s;
+  color: #44a7a7;
 }
 
 .makeAllDone:hover {
