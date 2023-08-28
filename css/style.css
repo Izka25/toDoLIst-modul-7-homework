@@ -46,6 +46,8 @@ body {
   background: green;
   max-width: 25px;
   transition: 1s;
+  width: 30px;
+  height: 30px;
 }
 
 .toggleDone:hover {
