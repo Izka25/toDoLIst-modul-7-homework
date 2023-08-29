@@ -18,9 +18,10 @@
 
 @media (max-width: 767px) {
   .section__header {
+    display: flex;
     flex-wrap: wrap;
     flex-basis: 100%;
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 }
 
@@ -36,4 +37,12 @@
 .section__buttons {
   display: flex;
   justify-content: flex-end;
+}
+
+@media (max-width: 767px) {
+.section__buttons {
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: baseline;
+}
 }
