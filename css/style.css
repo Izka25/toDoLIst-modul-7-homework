@@ -33,6 +33,8 @@ body {
   background: red;
   max-width: 25px;
   display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
   justify-content: flex-end;
   transition: 1s;
   color: white;
