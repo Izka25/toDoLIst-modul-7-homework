@@ -35,6 +35,7 @@ body {
   display: flex;
   justify-content: flex-end;
   transition: 1s;
+  color: white;
 }
 
 .remove:hover {
@@ -48,6 +49,7 @@ body {
   transition: 1s;
   width: 30px;
   height: 30px;
+  color: white;
 }
 
 .toggleDone:hover {
