@@ -14,6 +14,7 @@
   background-color: white;
   margin: auto;
   text-align: left;
+  border-bottom: 1px solid #eee;
 }
 
 @media (max-width: 767px) {
@@ -26,7 +27,6 @@
 }
 
 .section__title {
-  border-bottom: 1px solid #eee;
   background-color: white;
   margin: 0;
   padding: 10px;
