@@ -90,6 +90,7 @@ body {
 .newTask {
   max-width: 590px;
   padding: 10px;
+  border: 1px solid #eee;
 }
 
 .tasks__content {
