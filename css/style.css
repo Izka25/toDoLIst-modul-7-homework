@@ -63,10 +63,8 @@ body {
 
 .task {
   display: flex;
-  flex-wrap: 10px;
   flex-basis: 100px;
   border-bottom: 1px solid #eee;
-  border: 0px 1px solid black;
   margin: auto;
   background-color: white;
   padding: 25px;
