@@ -25,6 +25,9 @@
   transform: scale(1.5);
 }
 
+.makeAllDone:disabled {
+  color: #ccc;
+}
 .makeAllDone {
   border: none;
   margin: 0 0 0 20px;
