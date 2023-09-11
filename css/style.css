@@ -38,6 +38,7 @@ body {
   justify-content: flex-end;
   transition: 1s;
   color: white;
+  border: none;
 }
 
 .remove:hover {
@@ -52,6 +53,7 @@ body {
   width: 30px;
   height: 30px;
   color: white;
+  border: none;
 }
 
 .toggleDone:hover {
@@ -107,6 +109,7 @@ body {
   background-color: #326c86;
   color: white;
   transition: 1s;
+  border: none;
 }
 
 .button:hover {
