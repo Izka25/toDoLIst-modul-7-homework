@@ -20,11 +20,6 @@
   }
 }
 
-.hideDoneButton:hover {
-  background: transparent;
-  transform: scale(1.5);
-}
-
 .makeAllDone:disabled {
   color: #ccc;
 }
@@ -36,7 +31,4 @@
   color: #44a7a7;
 }
 
-.makeAllDone:hover {
-  background: transparent;
-  transform: scale(1.5);
-}
+
