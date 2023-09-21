@@ -83,13 +83,14 @@
   };
 
   const renderButtons = () => {
-    let htmlButtonsString = "";
+    const buttonsElement = document.querySelector(".js-buttons");
 
     if (!tasks.length) {
+      buttonsElement.innerHTML="";
       return;
     }
 
-    htmlButtonsString += `
+    buttonsElement.innerHTML =`
     
     <button class = "hideDoneButton js-hideDoneButton ">
         ${hideDoneTasks ? "Pokaż ukończone" : "Ukryj ukończone"}
@@ -103,7 +104,6 @@
     
      `;
 
-    document.querySelector(".js-buttons").innerHTML = htmlButtonsString;
   };
 
   const bindButtonsEvents = () => {
